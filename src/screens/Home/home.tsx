@@ -1,8 +1,10 @@
 import React from "react";
-import { Text,View, StyleSheet } from "react-native";
+import { View } from "react-native";
 import { StatusBar } from 'expo-status-bar';
 import styles from './Style';
 import { BatLogo } from "../../components/BatLogo/BatLogo";
+import { BatTextInput } from "../../components/BatTextInput/BatTextInput";
+import { BatButton } from "../../components/BatButton/BatButton";
 
 export default function Home() {
 return (
@@ -10,10 +12,15 @@ return (
       <View style={styles.logoContainer}>
       <BatLogo/>
       </View>
+      <View style={styles.inputContainer}>
+        
+        <BatButton/>
+      </View>
       
-    <Text>Matias Developer</Text>
-    <StatusBar style="auto" />
-    <Text>Home Works!!</Text>
+      
+    
+    <StatusBar style="light" />
+   
   </View>
     
 )
